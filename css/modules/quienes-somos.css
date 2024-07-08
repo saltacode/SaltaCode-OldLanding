@@ -1,0 +1,204 @@
+.quienes-somos{
+    margin: 3rem 0rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/backgrounds/background_quienes_somos.png');
+    background-position-x: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.quienes-somos-title{
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+
+.quienes-somos-title img{
+    position: absolute;
+    bottom: 36px;
+}
+
+.quienes-somos-texto{
+    text-align: center;
+}
+
+.quienes-somos-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.quienes-somos-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienes-somos-card-header-title{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 0.08rem;
+}
+
+.quienes-somos-card-header-title-nombre{
+    margin-bottom: 1rem 0rem;
+}
+
+.quienes-somos-card-header-title-puesto{
+    font-size: 1.1rem;
+    opacity: .6;
+}
+
+.quienes-somos-card-header-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.quienes-somos-card-header-blur{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--light-primary);
+    filter: blur(5rem);
+    z-index: -1;
+}
+
+.quienes-somos-foto-perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.quienes-somos-card-textoylogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quienes-somos-card-body-descripcion{
+    display: none;
+}
+
+.quienes-somos-card-body {
+    margin: 1rem;
+    text-align: center;
+}
+
+.quienes-somos-card-body-ver-mas{
+    text-align: center;
+    color: var(--light-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.quienes-somos-card-body-ver-menos{
+    text-align: center;
+    display: none;
+    color: var(--light-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.quienes-somos-card-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.quienes-somos-card-footer a {
+    /* margin-right: 0.7rem; */
+    margin: 0 .3rem
+}
+
+@media only screen and (min-width: 1024px) {
+    .quienes-somos-card {
+        margin: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.096);
+        cursor: pointer;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .quienes-somos-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: calc(48.2% - 10px);
+        margin: 0.62rem;
+        padding: 1.3rem;
+
+    }
+
+    .quienes-somos-title img{
+        position: relative;
+        bottom: 0px;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .quienes-somos-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 10px);
+        margin: 0.62rem;
+        padding: 1.3rem;
+    }
+
+    .quienes-somos-title img{
+        position: relative;
+        bottom: 0px;
+        display: block;
+        margin: auto;
+    }
+    
+    .quienes-somos-card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .quienes-somos-card-header-title {
+        margin: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .quienes-somos-card-body{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quienes-somos-card-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

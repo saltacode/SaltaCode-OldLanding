@@ -1,0 +1,19 @@
+#barra-vertical{
+    display: inline-block;
+    margin-right: 1rem;
+    width: .4rem;
+    height: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--dark-primary);
+}
+
+/*Moviles */
+@media only screen and (max-width: 767px) {
+    #barra-vertical{
+        padding: 1.3rem 0;
+        margin-right: 1rem;
+    }
+}

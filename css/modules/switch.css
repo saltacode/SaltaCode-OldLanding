@@ -1,0 +1,62 @@
+.dark-light-label {
+  display: block;
+  width: 50px;
+  height: 25px;
+  margin: 0.5rem;
+  border-radius: 18px;
+  background-color: var(--light-primary);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#dark-light-checkbox {
+  visibility: hidden;
+}
+
+.dark-light-ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--light-background);
+  transition: all 0.3s ease-in-out;
+}
+
+#dark-light-checkbox:checked ~ .dark-light-ball {
+  transform: translateX(25px);
+}
+
+/*Media Queri para responsive*/
+@media only screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .dark-light-label {
+    display: block;
+    width: 3rem;
+    height: 1.5rem;
+    margin: 1rem 0rem;
+    border-radius: 18px;
+    background-color: var(--light-primary);
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .dark-light-ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--light-background);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #dark-light-checkbox:checked ~ .dark-light-ball {
+    transform: translateX(1.55rem);
+  }
+
+}

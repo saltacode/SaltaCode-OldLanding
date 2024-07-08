@@ -1,0 +1,89 @@
+a {
+    color: inherit;
+}
+
+.politicy{
+    margin: 1rem 15% 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.politicy a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.politicy-title{
+    margin: 2rem 0;
+    font-size: 18px;
+}
+
+.politicy ol{
+    margin-left: 3rem;
+    font-size: inherit;
+}
+
+.politicy-container li {
+    font-weight: bold;
+    padding: 0.3rem 0;
+    margin-left: 2rem;
+}
+
+.politicy a{
+    font-size: inherit;
+}
+
+.politicy-index {
+    margin: 0 2rem;
+}
+
+.politicy-container-text-contact {
+    margin-top: 1rem;
+}
+
+.politicy-container-subtitle{
+    margin: 1rem 0 0 0;
+}
+
+.politicy-container-text-contact-wpp, .politicy-container-text-contact-email{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.politicy-container-text-contact img{
+    margin-right: 1rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.description-logo{
+    margin-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tabletas */
+    .hero{
+        margin: 2rem;
+    }
+  }
+
+/*Media Queri para responsive*/
+@media only screen and (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+    .politicy{
+        margin: 1rem 2rem;
+    }
+
+    .hero, .imagen-logo {
+        margin: 2rem 0;
+    }
+}
