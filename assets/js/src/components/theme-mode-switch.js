@@ -37,3 +37,53 @@ const themeModeSwitch = (() => {
 })();
 
 export default themeModeSwitch;
+
+/*
+
+const themeModeSwitch = (() => {
+
+  let modeSwitch = document.querySelector('[data-bs-toggle="mode"]');
+  let scLogos = document.querySelectorAll('SClogo');
+
+  if(modeSwitch === null) return;
+
+  let checkbox = modeSwitch.querySelector('.form-check-input');
+
+  if (mode === 'dark') {
+    root.classList.add('dark-mode');
+    checkbox.checked = true;
+    scLogos.forEach(img => {
+      img.src = 'assets/img/logo_nav_dark.png';
+    });
+  } else {
+    root.classList.remove('dark-mode');
+    checkbox.checked = false;
+    scLogos.forEach(img => {
+      img.src = 'assets/img/logo_nav_light.png';
+    });
+  }
+
+  modeSwitch.addEventListener('click', (e) => {
+    if (checkbox.checked) {
+      root.classList.add('dark-mode');
+      window.localStorage.setItem('mode', 'dark');
+      scLogos.forEach(img => {
+        img.src = 'assets/img/logo_nav_dark.png';
+      });
+    } else {
+      root.classList.remove('dark-mode');
+      window.localStorage.setItem('mode', 'light');
+      scLogos.forEach(img => {
+        img.src = 'assets/img/logo_nav_light.png';
+      });
+    }
+  });
+
+
+
+  
+
+})();
+
+export default themeModeSwitch;
+*/
