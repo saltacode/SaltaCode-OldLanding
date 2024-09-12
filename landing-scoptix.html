@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Saltacode | Desarrollo e Innovacion</title>
+
+    <!-- SEO Meta Tags -->
+    <title>SaltaCode</title>
+    <meta name="description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="keywords" content="SaltaCode, Desarrollo web personalizado, soluciones tecnológicas personalizadas, software por suscripción, servicios de programación freelance, innovación, startup, Argentina, Salta">
+    <link rel="canonical" href="https://www.saltacode.com/" />
+    <!-- La URL debe ser concisa, lógicamente estructurada y optimizada con palabras clave. -->
+
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="SaltaCode">
+    <meta property="og:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://www.saltacode.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SaltaCode">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SaltaCode">
+    <meta name="twitter:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="https://www.saltacode.com/">
+    <meta name="twitter:site" content="@saltacode">
+    <meta name="twitter:creator" content="@saltacode">
+    <meta name="twitter:domain" content="saltacode.com">
+
+    <!-- SEO Meta Tags-->
+    <!-- <meta name="description" content="Saltacode - Compañia de software, Salta Capital Argentina">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, shopping cart, mobile app showcase, saltacode, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="SaltaCode"> -->
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <link rel="manifest" href="assets/favicon/site.webmanifest"> -->
+    <!-- <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1"> -->
+    <link rel="shortcut icon" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml"> -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/nexa" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Page loading styles -->
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/nexa');
+      /* font-family: 'Nexa', sans-serif; */
+      body{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+      }
+      h1,h2{
+        font-family: 'Nexa', sans-serif;
+      }
+
+      .font-nexa{
+        font-family: 'Nexa', sans-serif;
+      }
+
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .customer-logo{
+        width: 200px;
+        height: auto;
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Cargando...</span>
+      </div>
+    </div>
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img id="logo" class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode">
+            <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#productsAndServices" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Servicios y Productos</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/new-landing/navbar/landingsedit.png); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Servicios</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-saas-v1.html" class="dropdown-item">Software empresarial</a></li>
+                          <li><a href="landing-saas-v2.html" class="dropdown-item">Colaboracion empresarial</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Productos</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-saas-v1.html" class="dropdown-item">Scoptix</a></li>
+                          <!-- <li><a href="landing-saas-v2.html" class="dropdown-item">Sclearning</a></li> -->
+                          <li><a href="landing-saas-v3.html" class="dropdown-item">Sctock</a></li>
+                          <!-- <li><a href="landing-saas-v3.html" class="dropdown-item">Scattention</a></li> -->
+                          <li><a href="landing-saas-v3.html" class="dropdown-item">Scfinance</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#ourCustomers" class="nav-link">Nuestros clientes</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a href="components/typography.html" class="nav-link">Nosotros</a> -->
+                  <a href="#aboutUs" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a href="docs/getting-started.html" class="nav-link">Contactos</a> -->
+                  <a href="#footer" class="nav-link">Contactos</a>
+                </li>
+              </ul>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <!-- Hero section with layer parallax gfx -->
+      <section class="position-relative overflow-hidden py-4 mb-3">
+        <div class="container pt-lg-3">
+          <div class="row flex-lg-nowrap">
+            <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-5 mt-xl-4">
+              <h1 class="display-4 pt-5 pb-2 pb-lg-3 mt-sm-2 mt-lg-5">Task Management Assistant You Gonna Love</h1>
+              <p class="fs-lg mb-4 mb-lg-5">We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p>
+              <a href="#" class="btn btn-primary btn-lg">Get started for free</a>
+              <div class="pt-5 mt-xl-5">
+                <h6 class="pt-xl-3 pb-3 pb-lg-4">Largest companies use our tool to work efficiently</h6>
+                <div class="d-flex justify-content-center justify-content-lg-start mx-xl-n2">
+                  <a href="#" class="d-block me-2">
+                    <img src="assets/img/brands/07.svg" width="135" alt="Logo">
+                  </a>
+                  <a href="#" class="d-block me-2">
+                    <img src="assets/img/brands/04.svg" width="135" alt="Logo">
+                  </a>
+                  <a href="#" class="d-block me-2">
+                    <img src="assets/img/brands/02.svg" width="135" alt="Logo">
+                  </a>
+                  <a href="#" class="d-block me-2">
+                    <img src="assets/img/brands/05.svg" width="135" alt="Logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Layer parallax -->
+            <div class="parallax mt-4 ms-4 me-lg-0 ms-lg-n5 ms-xl-n3 mt-lg-n4">
+              <div class="parallax-layer" data-depth="0.1">
+                <img src="assets/img/landing/saas-1/hero/layer01.png" width="1416" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.15">
+                <img src="assets/img/landing/saas-1/hero/layer02.png" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.35">
+                <img src="assets/img/landing/saas-1/hero/layer03.png" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.25">
+                <img src="assets/img/landing/saas-1/hero/layer04.png" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.4">
+                <img src="assets/img/landing/saas-1/hero/layer05.png" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.28">
+                <img src="assets/img/landing/saas-1/hero/layer06.png" alt="Layer">
+              </div>
+              <div class="parallax-layer zindex-2" data-depth="0.35">
+                <img src="assets/img/landing/saas-1/hero/layer07.png" alt="Layer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+      <!-- More features (Grid) -->
+      <section class="container pt-4 pb-5 py-lg-5">
+        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Funciones</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3 g-xl-4 pb-md-3 pb-lg-5">
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxs-dashboard fs-2 text-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Reportes</h3>
+                <p class="fs-sm mb-0">Silicon is the powerful front-end solution based on Bootstrap 5 — the world’s most popular responsive, mobile-first front-end component library.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+              
+                <i class="bx bx-money fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Caja</h3>
+                <p class="fs-sm mb-0">Download package includes the documentation that covers all crucial information about how to get started, customize template and components usage.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-cart fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Ventas</h3>
+                <p class="fs-sm mb-0">It's not a surprise that nowadays over 80% of users surf the inernet using their mobile devices. Silicon is 100% responsive and optimized for small touch screens.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxs-package fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Productos</h3>
+                <p class="fs-sm mb-0">In the era of touch screens it's important to ensure great user experience on mobile, especially when it comes to such frequently used interface component as slider.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxs-truck text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Proveedores</h3>
+                <p class="fs-sm mb-0">All HTML files are checked via W3C validator to ensure 100% valid code. As you probably know invalid HTML limits innovation, but Silicon is innovative at its core.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-id-card text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Clientes</h3>
+                <p class="fs-sm mb-0">Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included in download package. Full tasks automation.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-notepad text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Notas</h3>
+                <p class="fs-sm mb-0">Silicon is built using Sass. Easily change colors, typography and much more. It is the most mature, stable, and powerful CSS extension language in the world.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100 bg-transparent border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-group text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 font-nexa">Usuarios</h3>
+                <p class="fs-sm mb-0">Silicon core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally drop jQuery and use ES6 modules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Pricing -->
+      <section class="mb-5 py-5 bg-secondary">
+        <div class="container py-5 my-md-2 my-lg-4 my-xl-5">
+          <h2 class="h1 text-center pb-3 pb-md-4">Transparent Pricing for You</h2>
+          <div class="price-switch-wrapper mb-n2">
+            <!-- <div class="form-check form-switch price-switch justify-content-center mt-2 mb-4" data-bs-toggle="price">
+              <input type="checkbox" class="form-check-input" id="pricing">
+              <label class="form-check-label" for="pricing">Monthly</label>
+              <label class="form-check-label d-flex align-items-start" for="pricing">Annually <span class="text-danger fs-xs fw-semibold mt-n2 ms-2">-10%</span></label>
+            </div>     -->
+            <div class="flex pt-md-3">
+              <div class="row pb-4">
+                <div class="col-12 col-lg-4 mb-3 mb-md-3">
+                  <div class="card h-100 border-0 shadow-sm p-xxl-3 card-hover" style="min-width: 18rem;">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                        <div class="flex-shrink-0 bg-secondary rounded-3">
+                          <!-- <img src="assets/img/landing/saas-1/pricing/basic.png" width="84" alt="Icon"> -->
+                        </div>
+                        <div class="ps-4">
+                          <h3 class="fs-lg fw-normal text-body mb-2">Basic</h3>
+                          <h4 class="h3 lh-1 mb-0">
+                            <span data-monthly-price>$6.00</span>
+                            <span class="d-none" data-annual-price>$5.40</span>
+                            <span class="text-body fs-sm fw-normal"> / per month</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <ul class="list-unstyled fs-sm pb-md-3 mb-3">
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Aenean neque tortor, purus faucibus
+                        </li>
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Nullam augue vitae et volutpat sagittis
+                        </li>
+                        <li class="d-flex text-muted mb-2">
+                          <i class="bx bx-x fs-xl me-1"></i>
+                          Mauris massa penatibus enim elit quam
+                        </li>
+                        <li class="d-flex text-muted mb-2">
+                          <i class="bx bx-x fs-xl me-1"></i>
+                          Nec ac sagittis nunc bibendum
+                        </li>
+                        <li class="d-flex text-muted">
+                          <i class="bx bx-x fs-xl me-1"></i>
+                          Odio ut orci volutpat ultricies eleifend
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer border-0 pt-0 pb-4">
+                      <a href="#" class="btn btn-outline-primary w-100">Start free trial</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3 mb-md-3">
+                  <div class="card h-100 border-0 bg-primary shadow-primary shadow-dark-mode-none p-xxl-3 card-hover" style="min-width: 18rem;">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                        <div class="flex-shrink-0 rounded-3" style="background-color: rgba(255,255,255, .1);">
+                          <!-- <img src="assets/img/landing/saas-1/pricing/standard.png" width="84" alt="Icon"> -->
+                        </div>
+                        <div class="ps-4">
+                          <h3 class="fs-lg fw-normal text-light opacity-70 mb-2">Standard</h3>
+                          <h4 class="h3 text-light lh-1 mb-0">
+                            <span data-monthly-price>$12.00</span>
+                            <span class="d-none" data-annual-price>$10.80</span>
+                            <span class="fs-sm fw-normal opacity-70"> / per month</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <ul class="list-unstyled fs-sm pb-md-3 mb-3">
+                        <li class="d-flex text-light mb-2">
+                          <i class="bx bx-check fs-xl me-1"></i>
+                          <span class="opacity-70">Aenean neque tortor, purus faucibus</span>
+                        </li>
+                        <li class="d-flex text-light mb-2">
+                          <i class="bx bx-check fs-xl me-1"></i>
+                          <span class="opacity-70">Nullam augue vitae et volutpat sagittis</span>
+                        </li>
+                        <li class="d-flex text-light mb-2">
+                          <i class="bx bx-check fs-xl me-1"></i>
+                          <span class="opacity-70">Mauris massa penatibus enim elit quam</span>
+                        </li>
+                        <li class="d-flex text-light mb-2">
+                          <i class="bx bx-check fs-xl me-1"></i>
+                          <span class="opacity-70">Nec ac sagittis nunc bibendum</span>
+                        </li>
+                        <li class="d-flex text-light opacity-50">
+                          <i class="bx bx-x fs-xl me-1"></i>
+                          Odio ut orci volutpat ultricies eleifend
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer border-0 pt-0 pb-4">
+                      <a href="#" class="btn btn-light w-100">Start free trial</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3 mb-md-3">
+                  <div class="card h-100 border-0 shadow-sm p-xxl-3 card-hover" style="min-width: 18rem;">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                        <div class="flex-shrink-0 bg-secondary rounded-3">
+                          <!-- <img src="assets/img/landing/saas-1/pricing/ultimate.png" width="84" alt="Icon"> -->
+                        </div>
+                        <div class="ps-4">
+                          <h3 class="fs-lg fw-normal text-body mb-2">Ultimate</h3>
+                          <h4 class="h3 lh-1 mb-0">
+                            <span data-monthly-price>$18.00</span>
+                            <span class="d-none" data-annual-price>$16.20</span>
+                            <span class="text-body fs-sm fw-normal"> / per month</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <ul class="list-unstyled fs-sm pb-md-3 mb-3">
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Aenean neque tortor, purus faucibus
+                        </li>
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Nullam augue vitae et volutpat sagittis
+                        </li>
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Mauris massa penatibus enim elit quam
+                        </li>
+                        <li class="d-flex mb-2">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Nec ac sagittis nunc bibendum
+                        </li>
+                        <li class="d-flex">
+                          <i class="bx bx-check fs-xl text-primary me-1"></i>
+                          Odio ut orci volutpat ultricies eleifend
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer border-0 pt-0 pb-4">
+                      <a href="#" class="btn btn-outline-primary w-100">Start free trial</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
+    </main>
+
+    <i class='bx bx-support' ></i>
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <!-- <div class="container text-center pt-2 pt-md-4 pt-lg-5 pb-xl-3">
+        <div class="row justify-content-center pt-xxl-2">
+          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-11">
+            <h2 class="h1 pb-3 mb-3">Subscribe to Our Newsletter</h2>
+            <form class="subscription-form position-relative validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+              <div class="d-flex flex-column flex-sm-row">
+                <div class="position-relative w-100 mb-3 mb-sm-0 me-sm-3">
+                  <input class="form-control form-control-lg ps-5" type="email" name="EMAIL" placeholder="Your email" required>
+                  <i class="bx bx-envelope fs-xl text-muted position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                </div>
+                <button class="btn btn-primary shadow-primary btn-lg" type="submit" name="subscribe">Subscribe*</button>
+              </div>
+              
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+              </div>
+              <p class="mt-4 mb-0">*Enjoy using Silicon Template and stay tuned for the latest updates and news.</p>
+              <div class="subscription-status position-absolute top-100 start-50 translate-middle-x"></div>
+            </form>
+          </div>
+        </div>
+        <div class="pt-5 mt-lg-3 mt-xl-4">
+          <p class="text-muted mb-0">&copy; All rights reserved. Made with <i class="bx bx-heart d-inline-block fs-lg text-gradient-primary align-middle mt-n1 mx-1"></i> by&nbsp; <a href="https://createx.studio/" class="text-muted" target="_blank" rel="noopener">Createx Studio</a></p>
+        </div>
+      </div> -->
+      
+
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode">
+              <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+            </div>
+            <p class="pb-lg-3 mb-4">
+              Salta Code es una empresa orientada al servicio con sede en Salta, Argentina. Nos especializamos en el desarrollo de soluciones tecnológicas personalizadas y sofisticadas. Estamos dedicados a llevar a las empresas al siguiente nivel a través de la innovación.
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Contenido</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#productsAndServices" class="nav-link d-inline-block px-0 pt-1 pb-2">Servicios y Productos</a></li>
+                    <li class="nav-item"><a href="#ourCustomers" class="nav-link d-inline-block px-0 pt-1 pb-2">Nuestros clientes</a></li>
+                    <li class="nav-item"><a href="#aboutUs" class="nav-link d-inline-block px-0 pt-1 pb-2">Nosotros</a></li>
+                    <!-- <li class="nav-item"><a href="#contacts" class="nav-link d-inline-block px-0 pt-1 pb-2">Contactanos</a></li> -->
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terminos y Condiciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Politica de privacidad</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Redes</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="https://www.linkedin.com/company/saltacode/" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/saltacode.ar" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a>
+                      <!-- <span><i class='bx bxl-facebook-square fs-5'></i></span> -->
+                    </li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li> -->
+                    <li class="nav-item"><a href="https://www.instagram.com/saltacode.ar/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contacto</h6>
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="mailto:saltacodear@gmail.com" class="fw-medium" style="text-decoration: none;">saltacodear@gmail.com</a></li>
+                  <li class="nav-item"><a href="https://maps.app.goo.gl/RKfbDFHbga3HUNvH7" class="fw-medium" style="text-decoration: none;">Zuviria 333 Oficina 4C</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; Todos los derechos reservados. Creado por </span>
+          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">SaltaCode</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

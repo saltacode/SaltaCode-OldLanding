@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Saltacode | Desarrollo e Innovacion</title>
+
+    <!-- SEO Meta Tags -->
+    <title>SaltaCode</title>
+    <meta name="description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="keywords" content="SaltaCode, Desarrollo web personalizado, soluciones tecnológicas personalizadas, software por suscripción, servicios de programación freelance, innovación, startup, Argentina, Salta">
+    <link rel="canonical" href="https://www.saltacode.com/" />
+    <!-- La URL debe ser concisa, lógicamente estructurada y optimizada con palabras clave. -->
+
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="SaltaCode">
+    <meta property="og:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://www.saltacode.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SaltaCode">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SaltaCode">
+    <meta name="twitter:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="https://www.saltacode.com/">
+    <meta name="twitter:site" content="@saltacode">
+    <meta name="twitter:creator" content="@saltacode">
+    <meta name="twitter:domain" content="saltacode.com">
+
+    <!-- SEO Meta Tags-->
+    <!-- <meta name="description" content="Saltacode - Compañia de software, Salta Capital Argentina">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, shopping cart, mobile app showcase, saltacode, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="SaltaCode"> -->
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <link rel="manifest" href="assets/favicon/site.webmanifest"> -->
+    <!-- <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1"> -->
+    <link rel="shortcut icon" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml"> -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/nexa" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Page loading styles -->
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/nexa');
+      /* font-family: 'Nexa', sans-serif; */
+      body{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+      }
+      h1,h2{
+        font-family: 'Nexa', sans-serif;
+      }
+
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .customer-logo{
+        width: 200px;
+        height: auto;
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Cargando...</span>
+      </div>
+    </div>
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img id="logo" class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode">
+            <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#productsAndServices" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Servicios y Productos</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/new-landing/navbar/landingsedit.png); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Servicios</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="#" class="dropdown-item">Software empresarial</a></li>
+                          <li><a href="#" class="dropdown-item">Colaboracion empresarial</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Productos</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-scoptix.html" class="dropdown-item">Scoptix</a></li>
+                          <li><a href="#" class="dropdown-item">Sctock</a></li>
+                          <li><a href="#" class="dropdown-item">Scfinance</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#ourCustomers" class="nav-link">Nuestros clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#aboutUs" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#footer" class="nav-link">Contactos</a>
+                </li>
+              </ul>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <section class="dark-mode vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden" style="background-image: url(assets/img/landing/intro/hero/bg.jpg);">
+        <div class="container vh-100">
+          <div class="row flex-nowrap vh-100">
+            <div class="col-lg-4 col-md-5 d-flex flex-column text-center text-md-start py-5">
+              <h1 class="display-3 mt-auto mb-0" style="font-family: 'Nexa', sans-serif;">SaltaCode</h1>
+              <small class="text-light opacity-70 mb-4">Innovación y desarrollo</small>
+              <!-- <p class="lead text-light opacity-70 py-0 mb-0">Desarrollamos soluciones de software personalizadas que catapultan tu negocio hacia el futuro digital.</p> -->
+              <p class="lead text-light opacity-70 py-0 mb-0">
+                Estamos comprometidos a llevar a las empresas al siguiente nivel a través de la innovación.
+              </p>
+              <!-- <img src="assets/img/landing/intro/hero/switcher.svg" width="212" class="d-block mx-auto mx-md-0" alt="Light / Dark Mode"> -->
+              <div class="position-relative d-flex align-items-center justify-content-center justify-content-md-start mb-md-4 mb-lg-5 mt-auto">
+                <div class="btn btn-icon btn-secondary rounded-circle">
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+                <a href="#contacts" class="nav-link stretched-link text-light fw-normal opacity-80 py-2 px-3" data-scroll data-scroll-offset="70">Agenda una reunión</a>
+              </div>
+            </div>
+            <div class="d-flex flex-shrink-0 align-items-start">
+              <img src="assets/img/new-landing/hero/screens01edit.png" class="rellax d-block flex-shrink-0 mt-n5" width="486" height="1390" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+              <img src="assets/img/new-landing/hero/screens02edit.png" class="rellax d-block flex-shrink-0 mt-5" width="486" height="1470" alt="Screens" data-rellax-speed="-4" data-disable-parallax-down="md">
+              <img src="assets/img/new-landing/hero/screens03edit.png" class="rellax d-block flex-shrink-0" width="486" height="1480" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <section id="productsAndServices" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
+        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Servicios y Productos</h2>
+        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Ofrecemos software empresarial personalizado y sistemas de gestión especializados para optimizar tus procesos y potenciar tu crecimiento.</p>
+        <p class="fs-4 pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Servicios</p>
+        <div class="row row-cols-1 row-cols-sm-2">
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.1">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-mobile-app-showcase-v1.html" class="stretched-link">Software Empresarial</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-mobile-app-showcase-v2.html" class="stretched-link">Colaboración Empresarial</a>
+            </h3>
+          </div>
+        </div>
+        <p class="fs-4 pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Productos</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/startup.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-startup.html" class="d-flex justify-content-center align-items-center stretched-link">Scoptix</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/product-landing.jpg" class="b-block border rounded-3 shadow-sm" alt="Product Landing">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-product.html" class="d-flex justify-content-center align-items-center stretched-link">Sctock
+                <!-- <span class="badge bg-success fs-xs ms-2">New</span> -->
+              </a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.1">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v1.html" class="stretched-link">Scfinance</a>
+            </h3>
+          </div>
+
+          <!-- <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.2">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v2.html" class="stretched-link">SaaS v.2</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v3.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.3">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v3.html" class="stretched-link">SaaS v.3</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/financial.jpg" class="b-block border rounded-3 shadow-sm" alt="Financial Consulting">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-financial.html" class="stretched-link">Financial Consulting</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/online-courses.jpg" class="b-block border rounded-3 shadow-sm" alt="Online Courses">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-online-courses.html" class="stretched-link">Online Courses</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/medical.jpg" class="b-block border rounded-3 shadow-sm" alt="Medical">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-medical.html" class="stretched-link">Medical</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/digital-agency.jpg" class="b-block border rounded-3 shadow-sm" alt="Digital Agency">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-digital-agency.html" class="stretched-link">Digital Agency</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/conference.jpg" class="b-block border rounded-3 shadow-sm" alt="Conference">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-conference.html" class="stretched-link">Conference</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/software-company.jpg" class="b-block border rounded-3 shadow-sm" alt="IT (Software) Company">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-software-company.html" class="stretched-link">IT (Software) Company</a>
+            </h3>
+          </div>
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/blog-homepage.jpg" class="b-block border rounded-3 shadow-sm" alt="Blog Homepage">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-blog.html" class="stretched-link">Blog Homepage</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <div class="position-relative">
+              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
+              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
+                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
+              </div>
+            </div>
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <span class="nav-link justify-content-center fw-bold pe-none p-0">Coming Soon</span>
+            </h3>
+          </div> -->
+
+        </div>
+      </section>
+
+      <section id="ourCustomers" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
+        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Nuestros clientes</h2>
+        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Empresas que ya nos eligieron.</p>
+        <div class="row gy-5 mt-1">
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/OpticaTotal_Logo_B&W.png" class="customer-logo" title="OpticaTotal logo">
+          </div>
+
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/ko27_Logo_B&W.png" class="customer-logo" title="KO-27 logo">
+          </div>
+            
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/Balance_Logo_B&W.png" class="customer-logo" title="Balance logo">
+          </div>
+
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/V8_Logo_B&W.png" width="140px" title="V8 logo">
+          </div>
+
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/Kamal_Logo_B&W.png" class="customer-logo" title="Grupo Kamal logo">
+          </div>
+          <div class="col-4 p-4">
+            <img src="assets/img/new-landing/clients/PUNA_Logo_B&W.png" width="150px" title="Planeta Puna logo">
+          </div>
+        </div>
+      </section>
+
+      <!-- Quienes somos section -->
+      <section id="aboutUs" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5 mb-lg-5 pb-lg-4">
+        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Nosotros</h2>
+        <div class="container mx-4">
+          <p class="mt-4 mb-0 mx-4 px-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam earum necessitatibus ducimus sed nesciunt. Eos porro dignissimos omnis veritatis quisquam reprehenderit suscipit iusto totam, perferendis non enim neque obcaecati dicta quam corporis sit et incidunt, dolorem labore nobis. Esse, facilis! Illo dolorum vel labore quas reiciendis hic accusantium temporibus deleniti.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode">
+              <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+            </div>
+            <p class="pb-lg-3 mb-4">
+              Salta Code es una empresa orientada al servicio con sede en Salta, Argentina. Nos especializamos en el desarrollo de soluciones tecnológicas personalizadas y sofisticadas.
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Contenido</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#productsAndServices" class="nav-link d-inline-block px-0 pt-1 pb-2">Servicios y Productos</a></li>
+                    <li class="nav-item"><a href="#ourCustomers" class="nav-link d-inline-block px-0 pt-1 pb-2">Nuestros clientes</a></li>
+                    <li class="nav-item"><a href="#aboutUs" class="nav-link d-inline-block px-0 pt-1 pb-2">Nosotros</a></li>
+                    <!-- <li class="nav-item"><a href="#contacts" class="nav-link d-inline-block px-0 pt-1 pb-2">Contactanos</a></li> -->
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terminos y Condiciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Politica de privacidad</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Redes</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="https://www.linkedin.com/company/saltacode/" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/saltacode.ar" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a>
+                      <!-- <span><i class='bx bxl-facebook-square fs-5'></i></span> -->
+                    </li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li> -->
+                    <li class="nav-item"><a href="https://www.instagram.com/saltacode.ar/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contacto</h6>
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="mailto:saltacodear@gmail.com" class="fw-medium" style="text-decoration: none;">saltacodear@gmail.com</a></li>
+                  <li class="nav-item"><a href="https://maps.app.goo.gl/RKfbDFHbga3HUNvH7" class="fw-medium" style="text-decoration: none;">Zuviria 333 Oficina 4C</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; Todos los derechos reservados. Creado por </span>
+          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">SaltaCode</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
