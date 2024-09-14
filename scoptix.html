@@ -208,7 +208,7 @@
       <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
         <div class="container px-3">
-          <a href="index.html" class="navbar-brand pe-3">
+          <a href="scoptix.html" class="navbar-brand pe-3">
             <img id="logo" class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode" hidden>
             <img  src="assets/img/scoptix/logo/logo_scoptix_nav_primary.png" width="170px" alt="Scoptix">
             <!-- <span style="font-family: 'Nexa', sans-serif;">Scoptix</span> -->
@@ -226,6 +226,10 @@
                 <li class="nav-item">
                   <!-- <a href="components/typography.html" class="nav-link">Nosotros</a> -->
                   <a href="#plans" class="nav-link">Planes</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a href="docs/getting-started.html" class="nav-link">Contactos</a> -->
+                  <a href="#callToAction" class="nav-link">Solicitar prueba</a>
                 </li>
                 <li class="nav-item">
                   <!-- <a href="docs/getting-started.html" class="nav-link">Contactos</a> -->
@@ -256,10 +260,10 @@
                 <!-- Nuestro software te ofrece un conjunto completo de funcionalidades diseñadas para optimizar cada etapa de tu negocio. La solución perfecta para tu óptica. -->
                 Nuestro sistema de gestión te brinda las herramientas que necesitas para optimizar tus operaciones, aumentar tus ventas y fidelizar a tus clientes. Más que un software, es tu socio estratégico para el crecimiento.
               </p>
-              <a href="#" class="btn btn-primary btn-lg">Solicitar una prueba</a>
-              <!-- <div class="pt-5 mt-xl-5">
-                <h6 class="pt-xl-3 pb-3 pb-lg-4">Largest companies use our tool to work efficiently</h6>
-                <div class="d-flex justify-content-center justify-content-lg-start mx-xl-n2">
+              <a href="#callToAction" class="btn btn-primary shadow-primary btn-lg">Solicitar prueba</a>
+              <div class="pt-5 mt-xl-5">
+                <h6 class="pt-xl-3 pb-3 pb-lg-4">No esperes más para experimentar la eficiencia que tu óptica merece.</h6>
+                <!-- <div class="d-flex justify-content-center justify-content-lg-start mx-xl-n2">
                   <a href="#" class="d-block me-2">
                     <img src="assets/img/brands/07.svg" width="135" alt="Logo">
                   </a>
@@ -272,8 +276,8 @@
                   <a href="#" class="d-block me-2">
                     <img src="assets/img/brands/05.svg" width="135" alt="Logo">
                   </a>
-                </div>
-              </div> -->
+                </div> -->
+              </div>
             </div>
 
             <!-- Layer parallax -->
@@ -451,7 +455,8 @@
       <section id="plans" class="mb-5 py-5 bg-secondary mt-5">
         <div class="container py-5 my-md-2 my-lg-4 my-xl-5">
           <h2 class="h1 text-center pb-3 pb-md-4">Planes de Suscripción</h2>
-          <div class="price-switch-wrapper mb-n2">
+          <div class="mb-n2">
+            <!-- <div class="price-switch-wrapper mb-n2"> -->
             <!-- <div class="form-check form-switch price-switch justify-content-center mt-2 mb-4" data-bs-toggle="price">
               <input type="checkbox" class="form-check-input" id="pricing">
               <label class="form-check-label" for="pricing">Monthly</label>
@@ -598,45 +603,50 @@
         
       </section>
 
+      <!-- CTA -->
+      <section id="callToAction" class="py-5">
+        <div class="container text-center py-1 py-md-4 py-lg-5">
+          <h2 class="h1 mb-4">Solicite una prueba gratuita</h2>
+          <p class="lead pb-3 mb-3">Acceda a una prueba gratuita de 14 días.</p>
+          <a href="#" class="btn btn-primary shadow-primary btn-lg mb-1">Empezar</a>
+        </div>
+      </section>
+
 
     </main>
 
     <!-- <i class='bx bx-support' ></i> -->
     <!-- Footer -->
-    <footer id="footer" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
-      <!-- <div class="container text-center pt-2 pt-md-4 pt-lg-5 pb-xl-3">
+    <footer id="footer" class="footer dark-mode bg-dark pt-5 pb-2 pb-lg-3">
+      <div class="container text-center pt-2 pt-md-4 pt-lg-5 pb-xl-3">
         <div class="row justify-content-center pt-xxl-2">
           <div class="col-xl-6 col-lg-7 col-md-9 col-sm-11">
-            <h2 class="h1 pb-3 mb-3">Subscribe to Our Newsletter</h2>
-            <form class="subscription-form position-relative validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-              <div class="d-flex flex-column flex-sm-row">
-                <div class="position-relative w-100 mb-3 mb-sm-0 me-sm-3">
-                  <input class="form-control form-control-lg ps-5" type="email" name="EMAIL" placeholder="Your email" required>
-                  <i class="bx bx-envelope fs-xl text-muted position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                </div>
-                <button class="btn btn-primary shadow-primary btn-lg" type="submit" name="subscribe">Subscribe*</button>
-              </div>
-              
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
-              </div>
-              <p class="mt-4 mb-0">*Enjoy using Silicon Template and stay tuned for the latest updates and news.</p>
-              <div class="subscription-status position-absolute top-100 start-50 translate-middle-x"></div>
-            </form>
+            <h2 class="h2 pb-3 mb-3">Creado por</h2>
+            <div class="navbar-brand justify-content-center text-dark p-0 me-0 mb-3 mb-lg-4">
+              <a href="index.html" class="navbar-brand pe-3">
+                <img class="SClogo" src="assets/img/logo_nav_dark.png" width="100" alt="SaltaCode">
+                <span class="fs-1" style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="pt-5 mt-lg-3 mt-xl-4">
-          <p class="text-muted mb-0">&copy; All rights reserved. Made with <i class="bx bx-heart d-inline-block fs-lg text-gradient-primary align-middle mt-n1 mx-1"></i> by&nbsp; <a href="https://createx.studio/" class="text-muted" target="_blank" rel="noopener">Createx Studio</a></p>
+          <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0"></p>
+          <a class="nav-link d-inline-block p-0" href="index.html" target="_blank" rel="noopener">SaltaCode</a>
+          <span class="text-light opacity-50">&copy; Todos los derechos reservados.</span>
+        </p>
         </div>
-      </div> -->
+        
+      </div>
       
 
-      <div class="container pt-lg-4">
+      <!-- <div class="container pt-lg-4">
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
             <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
               <img class="SClogo" src="assets/img/scoptix/logo/logo_scoptix_nav_primary.png" width="200" alt="Scoptix">
-              <!-- <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span> -->
+              <img class="SClogo" src="assets/img/logo_nav_dark.png" width="47" alt="SaltaCode">
+              <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
             </div>
             <p class="pb-lg-3 mb-4">
               Salta Code es una empresa orientada al servicio con sede en Salta, Argentina. Nos especializamos en el desarrollo de soluciones tecnológicas personalizadas y sofisticadas. Estamos dedicados a llevar a las empresas al siguiente nivel a través de la innovación.
@@ -653,7 +663,6 @@
                     <li class="nav-item"><a href="#productsAndServices" class="nav-link d-inline-block px-0 pt-1 pb-2">Servicios y Productos</a></li>
                     <li class="nav-item"><a href="#ourCustomers" class="nav-link d-inline-block px-0 pt-1 pb-2">Nuestros clientes</a></li>
                     <li class="nav-item"><a href="#aboutUs" class="nav-link d-inline-block px-0 pt-1 pb-2">Nosotros</a></li>
-                    <!-- <li class="nav-item"><a href="#contacts" class="nav-link d-inline-block px-0 pt-1 pb-2">Contactanos</a></li> -->
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terminos y Condiciones</a></li>
@@ -669,9 +678,7 @@
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="https://www.linkedin.com/company/saltacode/" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
                     <li class="nav-item"><a href="https://www.facebook.com/saltacode.ar" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a>
-                      <!-- <span><i class='bx bxl-facebook-square fs-5'></i></span> -->
                     </li>
-                    <!-- <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li> -->
                     <li class="nav-item"><a href="https://www.instagram.com/saltacode.ar/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
                   </ul>
                 </div>
@@ -679,7 +686,7 @@
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contacto</h6>
                 <ul class="nav flex-column mb-2 mb-lg-0">
-                  <li class="nav-item"><a href="mailto:saltacodear@gmail.com" class="fw-medium" style="text-decoration: none;">saltacodear@gmail.com</a></li>
+                  <li class="nav-item"><a href="mailto:saltacodear@gmail.com" class="fw-medium" style="text-decoration: none;">scoptix@saltacode.com</a></li>
                   <li class="nav-item"><a href="https://maps.app.goo.gl/RKfbDFHbga3HUNvH7" class="fw-medium" style="text-decoration: none;">Zuviria 333 Oficina 4C</a></li>
                 </ul>
               </div>
@@ -688,21 +695,17 @@
         </div>
         <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
           <span class="text-light opacity-50">&copy; Todos los derechos reservados. Creado por </span>
-          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">SaltaCode</a>
+          <a class="nav-link d-inline-block p-0" href="index.html" target="_blank" rel="noopener">SaltaCode</a>
         </p>
-      </div>
+      </div> -->
+
+
     </footer>
-    <!-- <div hidden data-bs-toggle="price"></div> -->
-    <!-- <div class="form-check form-switch price-switch justify-content-center mt-2 mb-4" data-bs-toggle="price">
-              <input type="checkbox" class="form-check-input" id="pricing">
-              <label class="form-check-label" for="pricing">Monthly</label>
-              <label class="form-check-label d-flex align-items-start" for="pricing">Annually <span class="text-danger fs-xs fw-semibold mt-n2 ms-2">-10%</span></label>
-            </div>     -->
 
 
     <!-- Back to top button -->
     <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Inicio</span>
       <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
     </a>
 
