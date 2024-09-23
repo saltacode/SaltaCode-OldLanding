@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Saltacode | Desarrollo e Innovacion</title>
+    <title>Saltacode | Software Empresarial</title>
 
     <!-- SEO Meta Tags -->
     <title>SaltaCode</title>
@@ -262,182 +262,230 @@
       </header>
 
 
-      <!-- Hero -->
-      <section class="dark-mode vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden" style="background-image: url(assets/img/landing/intro/hero/bg.jpg);">
-        <div class="container vh-100">
-          <div class="row flex-nowrap vh-100">
-            <div class="col-lg-4 col-md-5 d-flex flex-column text-center text-md-start py-5">
-              <h1 class="display-3 mt-auto mb-0" style="font-family: 'Nexa', sans-serif;">SaltaCode</h1>
-              <small class="text-light opacity-70 mb-4">Innovación y desarrollo</small>
-              <!-- <p class="lead text-light opacity-70 py-0 mb-0">Desarrollamos soluciones de software personalizadas que catapultan tu negocio hacia el futuro digital.</p> -->
-              <p class="lead text-light opacity-70 py-0 mb-0">
-                Estamos comprometidos a llevar a las empresas al siguiente nivel a través de la innovación.
-              </p>
-              <!-- <img src="assets/img/landing/intro/hero/switcher.svg" width="212" class="d-block mx-auto mx-md-0" alt="Light / Dark Mode"> -->
-              <div class="position-relative d-flex align-items-center justify-content-center justify-content-md-start mb-md-4 mb-lg-5 mt-auto">
-                <div class="btn btn-icon btn-secondary rounded-circle">
-                  <i class="bx bx-chevron-down"></i>
+      <!-- Hero slider + BG parallax -->
+      <section class="jarallax dark-mode bg-dark py-xxl-5" data-jarallax data-speed="0.4">
+        <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
+        <div class="jarallax-img" style="background-image: url(assets/img/landing/software-company/hero-bg.jpg);"></div>
+        <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
+
+          <!-- Slider controls (Prev / next) -->
+          <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2">
+            <i class="bx bx-chevron-left fs-1"></i>
+          </button>
+          <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2">
+            <i class="bx bx-chevron-right fs-1"></i>
+          </button>
+
+          <!-- Slider -->
+          <div class="container text-center py-xl-5">
+            <div class="row justify-content-center pt-lg-5">
+              <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+                <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
+                  "effect": "fade",
+                  "speed": 500,
+                  "autoplay": {
+                    "delay": 5500,
+                    "disableOnInteraction": false
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "prevEl": "#hero-prev",
+                    "nextEl": "#hero-next"
+                  }
+                }'>
+                  <div class="swiper-wrapper">
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">
+                        <img id="logo" class="SClogo" src="assets/img/logo_nav_dark.png" width="90" alt="SaltaCode">
+                        SaltaCode
+                      </h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light pb-2 mb-lg-5">Proveemos una alta gama de servicios IT de alta calidad y las mejores soluciones prácticas mejorando los negocios de nuestros clientes.</p>
+                      </div>
+                      <div class="delay-1 scale-up">
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Comienza tu proyecto</a>
+                      </div>
+
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">Award-Winning Software Development</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
+                      </div>
+                      <div class="delay-1 scale-up">
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View case studies</a>
+                      </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">24/7 Tech &amp; Business Support</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.</p>
+                      </div>
+                      <div class="delay-1 scale-up">
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Trabaja con nosotros</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pagination (bullets) -->
+                  <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
                 </div>
-                <a href="#contacts" class="nav-link stretched-link text-light fw-normal opacity-80 py-2 px-3" data-scroll data-scroll-offset="70">Agenda una reunión</a>
               </div>
             </div>
-            <div class="d-flex flex-shrink-0 align-items-start">
-              <img src="assets/img/new-landing/hero/screens01edit.png" class="rellax d-block flex-shrink-0 mt-n5" width="486" height="1390" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
-              <img src="assets/img/new-landing/hero/screens02edit.png" class="rellax d-block flex-shrink-0 mt-5" width="486" height="1470" alt="Screens" data-rellax-speed="-4" data-disable-parallax-down="md">
-              <img src="assets/img/new-landing/hero/screens03edit.png" class="rellax d-block flex-shrink-0" width="486" height="1480" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
-            </div>
           </div>
+        </div>
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
+          <div class="d-flex mb-4 mb-sm-0">
+            <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </div>
+          <a href="#" class="nav-link px-0">
+            Our case studies
+            <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+          </a>
         </div>
       </section>
 
+      <!-- Features -->
+      <section class="bg-secondary pb-md-2 pb-lg-5">
+        <div class="d-none d-lg-block" style="margin-top: -60px; padding-top: 60px;"></div>
+        <div class="container pb-4 pt-5">
+          <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Our Services</h2>
+          <div class="row align-items-center pb-5 mb-lg-2">
+            <div class="col-md-8 text-center text-md-start">
+              <p class="fs-lg text-muted mb-md-0">We are focused on helping brands grow through digital transformation services. We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision.</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+              <a href="services-v1.html" class="btn btn-outline-primary btn-lg">See all services</a>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
 
-      
-      <section id="productsAndServices" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
-        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Servicios y Productos</h2>
-        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Ofrecemos software empresarial personalizado y sistemas de gestión especializados para optimizar tus procesos y potenciar tu crecimiento.</p>
-        <p class="fs-4 pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Servicios</p>
-        <div class="row row-cols-1 row-cols-sm-2">
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.1">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-mobile-app-showcase-v1.html" class="stretched-link">Software Empresarial</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-mobile-app-showcase-v2.html" class="stretched-link">Colaboración Empresarial</a>
-            </h3>
-          </div>
-        </div>
-        <p class="fs-4 pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Productos</p>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/startup.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-startup.html" class="d-flex justify-content-center align-items-center stretched-link">Scoptix</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/product-landing.jpg" class="b-block border rounded-3 shadow-sm" alt="Product Landing">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-product.html" class="d-flex justify-content-center align-items-center stretched-link">Sctock
-                <!-- <span class="badge bg-success fs-xs ms-2">New</span> -->
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Custom Software Development
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac ac lectus cursus egestas.</p>
+                </div>
               </a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/saas-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.1">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-saas-v1.html" class="stretched-link">Scfinance</a>
-            </h3>
-          </div>
-
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/saas-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.2">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-saas-v2.html" class="stretched-link">SaaS v.2</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/saas-v3.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.3">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-saas-v3.html" class="stretched-link">SaaS v.3</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/financial.jpg" class="b-block border rounded-3 shadow-sm" alt="Financial Consulting">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-financial.html" class="stretched-link">Financial Consulting</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/online-courses.jpg" class="b-block border rounded-3 shadow-sm" alt="Online Courses">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-online-courses.html" class="stretched-link">Online Courses</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/medical.jpg" class="b-block border rounded-3 shadow-sm" alt="Medical">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-medical.html" class="stretched-link">Medical</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/digital-agency.jpg" class="b-block border rounded-3 shadow-sm" alt="Digital Agency">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-digital-agency.html" class="stretched-link">Digital Agency</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/conference.jpg" class="b-block border rounded-3 shadow-sm" alt="Conference">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-conference.html" class="stretched-link">Conference</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/software-company.jpg" class="b-block border rounded-3 shadow-sm" alt="IT (Software) Company">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-software-company.html" class="stretched-link">IT (Software) Company</a>
-            </h3>
-          </div>
-          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
-            <img src="assets/img/landing/intro/landings/blog-homepage.jpg" class="b-block border rounded-3 shadow-sm" alt="Blog Homepage">
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <a href="landing-blog.html" class="stretched-link">Blog Homepage</a>
-            </h3>
-          </div>
-          <div class="col position-relative mb-4 mb-lg-5">
-            <div class="position-relative">
-              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
-              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
-                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
-              </div>
             </div>
-            <h3 class="h5 mt-4 mb-3 mb-lg-0">
-              <span class="nav-link justify-content-center fw-bold pe-none p-0">Coming Soon</span>
-            </h3>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/rocket.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Software Integration
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst. Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.</p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/mobile-app.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Mobile App Development
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.</p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/analytics.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Business Analytics
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.</p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/web-search.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Software Testing
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt ultricies vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur ultricies.</p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/timer.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Project Management
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus feugiat enim id pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean. Scelerisque eget a nibh bibendum commodo.</p>
+                </div>
+              </a>
+            </div>
           </div>
-
         </div>
       </section>
 
-      <section id="ourCustomers" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
-        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Nuestros clientes</h2>
-        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Empresas que ya nos eligieron.</p>
-        <div class="row gy-5 mt-1">
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/OpticaTotal_Logo_B&W.png" class="customer-logo" title="OpticaTotal logo">
-          </div>
-
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/ko27_Logo_B&W.png" class="customer-logo" title="KO-27 logo">
-          </div>
-            
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/Balance_Logo_B&W.png" class="customer-logo" title="Balance logo">
-          </div>
-
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/V8_Logo_B&W.png" width="140px" title="V8 logo">
-          </div>
-
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/Kamal_Logo_B&W.png" class="customer-logo" title="Grupo Kamal logo">
-          </div>
-          <div class="col-4 p-4">
-            <img src="assets/img/new-landing/clients/PUNA_Logo_B&W.png" width="150px" title="Planeta Puna logo">
-          </div>
-        </div>
-      </section>
-
-      <!-- Quienes somos section -->
-      <section id="aboutUs" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5 mb-lg-5 pb-lg-4">
-        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">Nosotros</h2>
-        <div class="container mx-4">
-          <p class="mt-4 mb-0 mx-4 px-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam earum necessitatibus ducimus sed nesciunt. Eos porro dignissimos omnis veritatis quisquam reprehenderit suscipit iusto totam, perferendis non enim neque obcaecati dicta quam corporis sit et incidunt, dolorem labore nobis. Esse, facilis! Illo dolorum vel labore quas reiciendis hic accusantium temporibus deleniti.
-          </p>
+      <!-- CTA -->
+      <section class="position-relative bg-dark py-5">
+        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
+        <div class="container position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
+          <p class="lead text-light opacity-70 mb-3">¿Listo para comenzar?</p>
+          <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Lanza tu proyecto con nosotros</h2>
+          <a href="#" class="btn btn-primary shadow-primary btn-lg">Contrátanos</a>
         </div>
       </section>
 
@@ -520,6 +568,7 @@
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.min.js"></script>
