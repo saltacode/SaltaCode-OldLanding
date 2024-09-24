@@ -401,31 +401,74 @@
     fill: #FCFCFC;
   }
 
-svg .svg-elem-31 {
-    stroke-dashoffset: 1784.7403564453125px; /* Longitud total del trazo */
-    stroke-dasharray: 1784.7403564453125px; /* Para el efecto de trazo */
-    fill: transparent; /* Comienza transparente */
-    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s, /* Transición del trazo */
-                fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s; /* Relleno comienza después */
+  svg .svg-elem-31 { /* Asegúrate de que el selector sea correcto para el segundo elemento */
+    stroke-dashoffset: 1784.7403564453125px; /* Longitud del trazo inicial */
+    stroke-dasharray: 1784.7403564453125px; /* Longitud del trazo */
+    fill: transparent; /* Inicia transparente */
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s, /* Animación del trazo */
+                fill 1.4s cubic-bezier(0.47, 0, 0.745, 0.715) 4s; /* Relleno inicia después del trazo */
 }
 
 svg.active .svg-elem-31 {
-    stroke-dashoffset: 0; /* El trazo se anima a 0 */
-    fill: url(#SVGID_1_); /* Aplica el gradiente */
+    stroke-dashoffset: 0; /* Comienza a dibujar el trazo */
+    fill: url(#SVGID_1_); /* Aplica el gradiente del segundo elemento */
+    opacity: 1; /* Asegura que sea visible */
+    animation: fillAnimation1 4s forwards; /* Cambia a la animación del segundo elemento */
 }
 
-svg .svg-elem-32 {
-    stroke-dashoffset: 1784.7403564453125px; /* Longitud total del trazo */
-    stroke-dasharray: 1784.7403564453125px; /* Para el efecto de trazo */
-    fill: transparent; /* Comienza transparente */
-    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s, /* Transición del trazo */
-                fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s; /* Relleno comienza después */
+@keyframes fillAnimation1 {
+    0% {
+        fill: transparent; /* Comienza transparente */
+        stroke-dashoffset: 1784.7403564453125px; /* Inicia en el final del trazo */
+        opacity: 0; /* Comienza invisible */
+    }
+    95%{
+        opacity: 0;
+    }
+    99%{
+        opacity: .5;
+    }
+    100% {
+        fill: url(#SVGID_1_); /* Termina con el gradiente */
+        stroke-dashoffset: 0; /* Completa el trazo */
+        opacity: 1; /* Termina visible */
+    }
+}
+
+svg .svg-elem-32 { /* Asegúrate de que el selector sea correcto para el segundo elemento */
+    stroke-dashoffset: 1784.7403564453125px; /* Longitud del trazo inicial */
+    stroke-dasharray: 1784.7403564453125px; /* Longitud del trazo */
+    fill: transparent; /* Inicia transparente */
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s, /* Animación del trazo */
+                fill 1.4s cubic-bezier(0.47, 0, 0.745, 0.715) 4s; /* Relleno inicia después del trazo */
 }
 
 svg.active .svg-elem-32 {
-    stroke-dashoffset: 0; /* El trazo se anima a 0 */
-    fill: url(#SVGID_2_); /* Aplica el gradiente */
+    stroke-dashoffset: 0; /* Comienza a dibujar el trazo */
+    fill: url(#SVGID_2_); /* Aplica el gradiente del segundo elemento */
+    opacity: 1; /* Asegura que sea visible */
+    animation: fillAnimation2 4s forwards; /* Cambia a la animación del segundo elemento */
 }
+
+@keyframes fillAnimation2 {
+    0% {
+        fill: transparent; /* Comienza transparente */
+        stroke-dashoffset: 1784.7403564453125px; /* Inicia en el final del trazo */
+        opacity: 0; /* Comienza invisible */
+    }
+    95%{
+        opacity: 0;
+    }
+    99%{
+        opacity: .5;
+    }
+    100% {
+        fill: url(#SVGID_2_); /* Termina con el gradiente */
+        stroke-dashoffset: 0; /* Completa el trazo */
+        opacity: 1; /* Termina visible */
+    }
+}
+
   svg .svg-elem-33 {
     stroke-dashoffset: 1861.185546875px;
     stroke-dasharray: 1861.185546875px;
