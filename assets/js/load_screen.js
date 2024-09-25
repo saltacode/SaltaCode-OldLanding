@@ -1,9 +1,8 @@
-import { initializeSwiper } from "./swipper_clientes.js";
 /**
  * Clase LoadingScreen
  * Representa una pantalla de carga que puede ocultarse despuÃ©s de un cierto retraso.
  */
-export class LoadingScreen {
+class LoadingScreen {
   /**
    * Crea una nueva LoadingScreen.
    * @param {string} elementId - El ID del elemento HTML que representa la pantalla de carga.
@@ -36,7 +35,7 @@ export class LoadingScreen {
 /**
  * Inicializa la pantalla de carga cuando la pÃ¡gina se carga.
  */
-export const initializeLoadingScreen = () => {
+const initializeLoadingScreen = () => {
   window.addEventListener("load", function () {
     const loadingScreen = new LoadingScreen("loadingScreen");
     loadingScreen.hide().then(() => {
