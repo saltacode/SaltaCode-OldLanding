@@ -211,6 +211,16 @@
                 width: 200px;
                 height: auto;
             }
+
+            @media (min-width: 992px) {
+                .custom-container{
+                    /* Propiedades de contenedor para dispositivos grandes */
+                    max-width: 1320px; /* ancho del contenedor */
+                    margin: 0 auto; /* centrar el contenedor */
+                    padding: 20px; /* agregar relleno */
+                }
+            }
+            
         </style>
 
         <!-- Theme mode -->
@@ -1931,12 +1941,12 @@
                 class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5 mb-lg-5 pb-lg-4"
             >
                 <h2
-                    class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3"
+                    class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-1 pb-md-4 mb-0 mb-lg-3"
                 >
                     Nosotros
                 </h2>
-                <div class="container mx-4">
-                    <p class="mt-4 mb-0 mx-4 px-4">
+                <div class="custom-container mx-4">
+                    <p class="mt-4 mb-0 mx-4 px-lg-4 px-0 mb-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ipsam earum necessitatibus ducimus sed nesciunt. Eos
                         porro dignissimos omnis veritatis quisquam reprehenderit
