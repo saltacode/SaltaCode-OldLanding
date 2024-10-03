@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Saltacode | Software Empresarial</title>
+
+    <!-- SEO Meta Tags -->
+    <title>SaltaCode</title>
+    <meta name="description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="keywords" content="SaltaCode, Desarrollo web personalizado, soluciones tecnológicas personalizadas, software por suscripción, servicios de programación freelance, innovación, startup, Argentina, Salta">
+    <link rel="canonical" href="https://www.saltacode.com/" />
+    <!-- La URL debe ser concisa, lógicamente estructurada y optimizada con palabras clave. -->
+
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="SaltaCode">
+    <meta property="og:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://www.saltacode.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SaltaCode">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SaltaCode">
+    <meta name="twitter:description" content="SaltaCode, con sede en Salta, Argentina, es una startup dinámica especializada en desarrollar soluciones tecnológicas personalizadas. Nuestra misión es llevar las empresas al siguiente nivel a través de la innovación. Nuestro equipo diverso de expertos programadores combina un amplio conjunto de habilidades para aportar una perspectiva fresca a cada proyecto. Ofrecemos desarrollo web personalizado, soluciones de software por suscripción y servicios de programación freelance. Nos enorgullece trabajar con una variedad de clientes y ayudarles a alcanzar sus metas. Contáctanos para llevar tu negocio al siguiente nivel con SaltaCode.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="https://www.saltacode.com/">
+    <meta name="twitter:site" content="@saltacode">
+    <meta name="twitter:creator" content="@saltacode">
+    <meta name="twitter:domain" content="saltacode.com">
+
+    <!-- SEO Meta Tags-->
+    <!-- <meta name="description" content="Saltacode - Compañia de software, Salta Capital Argentina">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, shopping cart, mobile app showcase, saltacode, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="SaltaCode"> -->
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <link rel="manifest" href="assets/favicon/site.webmanifest"> -->
+    <!-- <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1"> -->
+    <link rel="shortcut icon" href="assets/img/new-landing/favicon/logo_fav_icon.png">
+    <!-- <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml"> -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/nexa" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Page loading styles -->
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/nexa');
+      /* font-family: 'Nexa', sans-serif; */
+      body{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-family: 'Nexa', sans-serif;
+      }
+
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .customer-logo{
+        width: 200px;
+        height: auto;
+      }
+    </style>
+
+    <!-- Load Screen -->
+    <link rel="stylesheet" href="assets/css/load_screen.css" />
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+          <div class="loading-indicator">
+              <svg
+                  id="logo-hero-load"
+                  data-name="Capa 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="178.81"
+                  height="172.96"
+                  viewBox="0 0 178.81 172.96"
+                  class="active"
+              >
+                  <g id="code">
+                      <g id="code_inf" data-name="code inf">
+                          <path
+                              d="M58.31,161.64c-1.39-1.19-3.73-2.89-4.73-3.6s-7.94-6-15.42-11.74L19.45,132.05C5.07,121.19,3.31,119.77,2.33,117.83c-2.65-5.1.29-10.55,6.89-12.84,2.51-.88,4.89-.28,8,2.07,1.52,1.09,5,3.71,7.89,5.78s7.36,5.58,10.11,7.65,6.2,4.74,7.6,5.79c9,6.72,9.35,7.11,9.35,9.34,0,1.76-.23,2.24-1.27,2.62-1.3.44-1.3.44,0,1a4.09,4.09,0,0,1,1.63,2.37c.46,1.9,3.8,7.92,6.19,11.14,1.3,1.75,1.76,3,2,6.44a14.5,14.5,0,0,1,.13,4.21,16.71,16.71,0,0,1-2.88-2Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#d3778b"
+                              class="svg-elem-1-load"
+                              stroke="#d3778b"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M85.8,175.69c-7-.61-20.34-7.77-27-13.7-.8-.85.56,0-.49-.49-.11.11-.08,0-.49-.49-1-1.18-.67-1.6.63-.68.92.71,1,.65.28-.11a4.25,4.25,0,0,1-.58-2.51,5.69,5.69,0,0,0-1.4-3.49,49.08,49.08,0,0,1-5.93-10.61,6,6,0,0,0-1.8-2.76c-1.82-1.41-2.51-4.48-1.19-5a1.16,1.16,0,0,1,.8-.07,1.09,1.09,0,0,1,.66.45c.42.6.59.54,1-.22a1.47,1.47,0,0,0-.28-1.63c-.47-.44-.66-.44-.66,0a.49.49,0,0,1,0,.24.5.5,0,0,1-.13.22A.6.6,0,0,1,49,135a.53.53,0,0,1-.25,0c-.29,0-.4-.26-.23-.53a1.12,1.12,0,0,0,.08-.7,1.19,1.19,0,0,0-.31-.61c-.48-.54-.48-.87.17-1.36s1.86.1,6.31,3.48c2.94,2.31,9.78,7.5,15.15,11.53,9,6.85,11,8.8,11,11,0,1,2.63,5.46,3.91,6.67a16.22,16.22,0,0,1,2.29,3.38,6.66,6.66,0,0,0,2,2.67c.36,0,.59,1.26.59,2.74,0,1.85-.23,2.67-.71,2.62l-3.09-.27Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#ca7497"
+                              class="svg-elem-2-load"
+                              stroke="#ca7497"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M87.85,175.35a1.3,1.3,0,0,0-.2-.64,1.28,1.28,0,0,0-.51-.44c-.58-.22-.58-.34,0-.34.83,0,1-1.68.12-1.68a7,7,0,0,1-2-2.68A16.55,16.55,0,0,0,83,166.18c-1.4-1.37-3.91-5.73-3.91-6.85a7.29,7.29,0,0,0-1.46-3.12c-.76-1.09-1.29-2-1-2s0-.39-.41-.82c-1.41-1.58-1.34-2,1.46-.32,4.21,2.57,11.11,4.26,15,3.49a13.66,13.66,0,0,1,3.55-.39,28.7,28.7,0,0,1,2.16,3.67,16.59,16.59,0,0,0,4.15,5.19,6.49,6.49,0,0,1,2.7,3.65c.17,1.05.57,1.91.87,1.91,1.05,0,.42,1.06-.82,1.66a40.1,40.1,0,0,1-12.71,3.43c-4,.32-4.65.47-4.65-.3Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#c270a5"
+                              class="svg-elem-3-load"
+                              stroke="#c270a5"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M104.37,172.33a4.36,4.36,0,0,1-1.05-2.18,6.86,6.86,0,0,0-2.63-3.56,17.27,17.27,0,0,1-4.44-5.67c-1.19-2.24-2.45-4-2.81-4s.82-.61,2.57-1.26a42.93,42.93,0,0,0,10.72-6.39c1.82-1.47,2-1.47,3.91-.71a15.44,15.44,0,0,1,4.67,3.83c1.46,1.64,2.93,3.33,3.34,3.66,1.81,1.52,2.51,1.95,3.39,1.95.58,0,.87.55.87,1.59,0,1.31-.87,2.18-5.66,5.73-6.26,4.54-11.86,7.6-12.87,7Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#b86db3"
+                              class="svg-elem-4-load"
+                              stroke="#b86db3"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M120.18,161.54a1.23,1.23,0,0,1,0-.76,1.26,1.26,0,0,1,.48-.61c.64-.39.58-.49-.24-.49a3.66,3.66,0,0,1-1.87-.65L117,157.71c-.39-.34-1.95-2-3.38-3.65a14.17,14.17,0,0,0-4.51-3.78,4.17,4.17,0,0,1-2-1c0-.39,3.92-3.57,6.19-4.9.76-.44,3.91-2.78,7.12-5.13s6-4.54,6.36-4.81a1.23,1.23,0,0,1,.86-.1,1.22,1.22,0,0,1,.73.48,3.24,3.24,0,0,0,1.51.82c.36,0,.65.22.65.49a6.15,6.15,0,0,0,1.36,1.8,30.81,30.81,0,0,1,2.64,3.39c.75,1.1,1.69,2,2.16,2a.82.82,0,0,1,.82.82c0,.44.83,1,2.05,1.18s2,.61,2,1-2.29,2.37-5.08,4.42-7.43,5.64-10.18,7.83a50.8,50.8,0,0,1-5.43,3.91c-.19,0-.53-.39-.77-.87Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#af6ac1"
+                              class="svg-elem-5-load"
+                              stroke="#af6ac1"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M171.29,121.34a15.2,15.2,0,0,1-1.74-2c-.53-1.31-5-5.25-6.56-5.8-1-.37-2.68-1-3.67-1.31a4.69,4.69,0,0,1-2-1c0-.71,7.73-5.68,9.36-6.12,3.86-1,9.18,1.47,11.17,5.25,2.16,4.2.82,8.57-3.56,11.52-1.51,1.09-1.51,1.09-3.1-.49Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#8e61ed"
+                              class="svg-elem-6-load"
+                              stroke="#8e61ed"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M139.76,147.43a4.18,4.18,0,0,0-2.15-.38c-1.35-.06-1.82-.34-1.82-1.1a.69.69,0,0,0,0-.35,1,1,0,0,0-.17-.31.85.85,0,0,0-.28-.22.75.75,0,0,0-.33-.1c-.48,0-1.42-.87-2.17-1.95a28.82,28.82,0,0,0-2.63-3.4,5.72,5.72,0,0,1-1.4-1.8.66.66,0,0,0-.06-.2.55.55,0,0,0-.13-.17,1,1,0,0,0-.18-.1h-.22a4.2,4.2,0,0,1-1.69-.87c-1.06-.88-1-1,2.8-4,3.56-2.79,8.07-6.28,10.76-8.19.87-.65,1.28-.54,3.38.76a22.89,22.89,0,0,1,3.66,3.08,13.79,13.79,0,0,0,3.8,2.62c1.29.66,2.38,1.53,2.38,2a.73.73,0,0,0,.16.53.78.78,0,0,0,.48.29c.76,0,2.28,1.36,2.22,2,0,.38-14.67,11.57-15.73,12.07a.73.73,0,0,1-.36,0,.82.82,0,0,1-.34-.16Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#a768cd"
+                              class="svg-elem-7-load"
+                              stroke="#a768cd"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M153.74,136a3.28,3.28,0,0,0-1.52-.82.81.81,0,0,1-.48-.28.75.75,0,0,1-.16-.54c0-.43-1-1.26-2.16-1.85a29.57,29.57,0,0,1-5.32-3.83c-2.12-1.8-3.4-2.62-4-2.37s-.82.11-.54-.27.12-.67-.23-.67,2.86-2.62,7.12-5.87,8.81-6.61,10-7.64c2.37-2,2.94-2.14,5.15-1a20.34,20.34,0,0,0,3,1.08c1.35.28,6.26,4.55,6.79,5.87a6.29,6.29,0,0,0,1.58,1.86,4.93,4.93,0,0,1,1.35,1.78c0,.44-17.24,14-19.11,15-.35.23-1.06,0-1.53-.43Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#9b64de"
+                              class="svg-elem-8-load"
+                              stroke="#9b64de"
+                              stroke-miterlimit="10"
+                          ></path>
+                      </g>
+                      <g id="code_sup" data-name="code sup">
+                          <path
+                              d="M165.42,74.46c-2-1-36-26.23-58.1-43.1-9.49-7.32-12.91-8.8-18.7-8.3A25.56,25.56,0,0,0,75.5,28.68c-15.18,11.86-27.93,21-29.09,21-1.63,0-3.34-1.26-3.34-2.37,0-.49-.69-1.19-1.57-1.53a12.27,12.27,0,0,1-3.24-2.24c-2-2-5.08-3.66-6.39-3.66-.57,0-4.34,2-4.34,1.82s7.68-6,13.06-10.06,11-8.31,12.51-9.49,3.69-2.94,4.89-3.84l6-4.53c7.9-6,14.79-9,22.39-9.66a40.28,40.28,0,0,1,26.73,8c3.32,2.52,37.49,28.19,55.27,41.62,10,7.53,10.68,8.47,10.12,13.28-.47,4-5.93,8.4-10.35,8.29a12.06,12.06,0,0,1-2.75-.87Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#7e5efc"
+                              class="svg-elem-9-load"
+                              stroke="#7e5efc"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M29.66,60c0-.27-.47-.54-1.05-.54s-2.37-1.19-3.91-2.73C22.89,55.06,21.31,54,20.49,54s-1.35-.21-1.35-.54-.65-.55-1.46-.55a2.5,2.5,0,0,1-2-1c-.46-1-.81-.86,2.58-3.37,2.17-1.63,6.74-5.1,9.29-7C31.55,38.4,35,36.83,35,38.19c0,.27.46.6,1.09.82a11.88,11.88,0,0,1,3.34,2.37,29,29,0,0,0,4,2.93c1,.49,1.7,1.19,1.59,1.58-.18.82,1.58,2.14,2.94,2.2s.48.47-1.88,2.43c-7.62,6-13,10.13-14.64,10.13-1,0-1.77-.22-1.77-.55Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#8e61ed"
+                              stroke="#8e61ed"
+                              class="svg-elem-10-load"
+                              stroke-miterlimit="10"
+                          ></path>
+                          <path
+                              d="M5.66,73.36C.28,69.8-.42,63.81,4,59.49c1.18-1.09,10.62-8.31,14.25-11,.58-.38-1.14,1.2-.74,1.87a1.32,1.32,0,0,0,1.69.64,1.13,1.13,0,0,1,1.46.49,1.79,1.79,0,0,0,1.65.88c.76,0,2.45,1.09,4.15,2.73s3.33,2.74,3.91,2.74,1.06.27,1.06.54.7.54,1.51.54,7-3.91,6.85-3.59C39.47,56.09,16.42,73.05,14.4,74A9.46,9.46,0,0,1,5.66,73.36Z"
+                              transform="translate(-0.59 -3.52)"
+                              fill="#9b64de"
+                              stroke="#9b64de"
+                              class="svg-elem-11-load"
+                              stroke-miterlimit="10"
+                          ></path>
+                      </g>
+                  </g>
+              </svg>
+          </div>
+      </div>
+  </div>
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img id="logo" class="SClogo" src="assets/img/logo_nav_light.png" width="47" alt="SaltaCode">
+            <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#productsAndServices" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Servicios y Productos</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/new-landing/navbar/landingsedit.png); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Servicios</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="#" class="dropdown-item">Software empresarial</a></li>
+                          <li><a href="#" class="dropdown-item">Colaboracion empresarial</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <h6 class="px-3 mb-2">Productos</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-scoptix.html" class="dropdown-item">Scoptix</a></li>
+                          <li><a href="#" class="dropdown-item">Sctock</a></li>
+                          <li><a href="#" class="dropdown-item">Scfinance</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#ourCustomers" class="nav-link">Nuestros clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#aboutUs" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#footer" class="nav-link">Contactos</a>
+                </li>
+              </ul>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <section class="jarallax position-relative d-flex align-items-center min-vh-100 bg-light mb-5 py-lg-5 pt-5" style="background-image: url(assets/img/landing/digital-agency/hero-bg.svg);" data-jarallax data-img-position="0% 100%" data-speed="0.5">
+        <div class="container position-relative zindex-5 py-5">
+          <div class="row justify-content-md-start justify-content-center">
+            <div class="col-md-6 col-sm-8 order-md-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
+              <div class="mb-md-5 pb-xl-5 mb-4">
+
+                <!-- Video popup btn -->
+                <div class="d-inline-flex align-items-center position-relative mb-3">
+                  <!-- <a href="https://www.youtube.com/watch?v=zPo5ZaH6sW8" class="btn btn-video btn-icon btn-lg flex-shrink-0 me-3 stretched-link" data-bs-toggle="video">
+                    <i class="bx bx-play"></i>
+                  </a> -->
+                  <h4 class="mb-0">SaltaCode</h4>
+                </div>
+
+                <!-- Text -->
+                <h1 class="display-2 mb-md-5 mb-3 pb-3">
+                  <span class="text-gradient-primary">Convertimos</span> tus ideas en realidad
+                </h1>
+                <div class="d-md-flex align-items-md-start">
+                  <a href="contacts-v1.html" class="btn btn-lg btn-primary flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Trabaja con nosotros</a>
+                  <p class="d-lg-block d-none mb-0 ps-md-3">Silicon is a leading full-service digital agency based in New York. We make mobile apps,websites &amp; brands, that people appreciate all around the world.</p>
+                </div>
+              </div>
+
+              <!-- Scroll down btn -->
+              <div class="d-inline-flex align-items-center justify-content-center justify-content-md-start position-relative">
+                <a href="#benefits" data-scroll data-scroll-offset="100" class="btn btn-video btn-icon rounded-circle shadow-sm flex-shrink-0 stretched-link me-3">
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <span class="fs-sm">Discover more</span>
+              </div>
+            </div>
+
+            <!-- Animated gfx -->
+            <div class="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
+              <lottie-player class="mx-auto" src="assets/json/animation-digital-agency.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Page title -->
+<h1 class="container pb-4 mt-n1 mt-lg-0">Impulsa tu negocio con nuestro software</h1>
+
+
+<!-- Service -->
+<section class="container mb-md-3 mb-lg-5 pb-5">
+  <div class="row">
+    <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+      <div class="pe-lg-5">
+        <img src="assets/img/services/service01.jpg" class="rounded-3" alt="Image">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2 class="h3 mb-sm-4">Consultas personalizadas</h2>
+      <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">Orci, ac libero sit ultrices enim volutpat augue. Congue sit nulla velit ornare cras. Facilisis tempus non erat ornare imperdiet. In ac ullamcorper proin urna, lacus, tortor, ullamcorper egestas mattis mauris.</p>
+      <div class="border rounded-3 mb-4 mb-lg-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-0">
+          <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+            <img src="assets/img/services/icons/digital.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Digital transformation</h3>
+              <p class="fs-xs mb-0">Aliquam quis odio senectus.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-bottom p-3">
+            <img src="assets/img/services/icons/chart.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Analytics services</h3>
+              <p class="fs-xs mb-0">Curabitur neque ut morbi sapien.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-end-sm p-3">
+            <img src="assets/img/services/icons/marketing.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Marketing &amp; sales</h3>
+              <p class="fs-xs mb-0">At faucibus molestie egestas sed.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="col d-flex align-items-center p-3">
+            <img src="assets/img/services/icons/cybersecurity.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Cybersecurity &amp; strategy</h3>
+              <p class="fs-xs mb-0">Orci bibendum ullamcorper lorem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="d-flex flex-column flex-sm-row">
+        <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+        <a href="#" class="btn btn-outline-primary">
+          Learn more
+          <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+        </a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Service -->
+<section class="container pt-2 pt-lg-3 mb-md-3 mb-lg-5 pb-5">
+  <div class="row">
+    <div class="col-md-6 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
+      <div class="ps-lg-5">
+        <img src="assets/img/services/service02.jpg" class="rounded-3" alt="Image">
+      </div>
+    </div>
+    <div class="col-md-6 ordr-md-1">
+      <h2 class="h3 mb-sm-4">Banking Expertise</h2>
+      <ul class="list-unstyled d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+        <li class="d-flex align-items-center mb-2">
+          <i class="bx bx-check lead text-primary me-2"></i>
+          Sagittis quam egestas sit sit convallis turpis sit augue interdum morbi.
+        </li>
+        <li class="d-flex align-items-center mb-2">
+          <i class="bx bx-check lead text-primary me-2"></i>
+          Sollicitudin cursus habitasse adipiscing est sed aenean sapien.
+        </li>
+        <li class="d-flex align-items-center">
+          <i class="bx bx-check lead text-primary me-2"></i>
+          At arcu arcu morbi scelerisque nibh. Quam velit fermentum porta facilisi massa.
+        </li>
+      </ul>
+      <div class="border rounded-3 mb-4 mb-lg-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-0">
+          <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+            <img src="assets/img/services/icons/insurance.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Insurance</h3>
+              <p class="fs-xs mb-0">Nunc dui aliquam volutpat augue.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-bottom p-3">
+            <img src="assets/img/services/icons/banking.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Banking risk</h3>
+              <p class="fs-xs mb-0">Habitasse adipiscing aenean sapien.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-end-sm p-3">
+            <img src="assets/img/services/icons/payments.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Payments</h3>
+              <p class="fs-xs mb-0">At faucibus molestie egestas sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="d-flex flex-column flex-sm-row">
+        <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+        <a href="#" class="btn btn-outline-primary">
+          Learn more
+          <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+        </a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Service -->
+<section class="container pt-2 pt-lg-3 mb-md-3 mb-lg-5 pb-5">
+  <div class="row">
+    <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+      <div class="pe-lg-5">
+        <img src="assets/img/services/service03.jpg" class="rounded-3" alt="Image">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2 class="h3 mb-sm-4">Software hecho a medida</h2>
+      <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">Sem scelerisque laoreet commodo velit. Fringilla tempor egestas mattis mauris eu dui in. Viverra enim velit fringilla turpis suspendisse amet ipsum, nisi sed.</p>
+      <div class="border rounded-3 mb-4 mb-lg-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-0">
+          <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+            <img src="assets/img/services/icons/asset.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Asset management</h3>
+              <p class="fs-xs mb-0">Mattis sodales tellus risus placerat in.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-bottom p-3">
+            <img src="assets/img/services/icons/operations.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Operations &amp; technology</h3>
+              <p class="fs-xs mb-0">Viverra volutpat tellus orci enim.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center border-end-sm p-3">
+            <img src="assets/img/services/icons/finance.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Corporate finance</h3>
+              <p class="fs-xs mb-0">Aliquet amet pharetra fermentum sem.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="col d-flex align-items-center p-3">
+            <img src="assets/img/services/icons/audit.svg" width="48" alt="Icon">
+            <div class="ps-2 ms-1">
+              <h3 class="h6 mb-0">Audit services</h3>
+              <p class="fs-xs mb-0">Venenatis congue iaculis malesuada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="d-flex flex-column flex-sm-row">
+        <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+        <a href="#" class="btn btn-outline-primary">
+          Learn more
+          <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+        </a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+      <!-- Features (Icon + Text) -->
+      <section class="container mt-4">
+        <h2 class="h1 text-center pb-4 pb-lg-5">¿Por qué somos la mejor opción?</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/chat.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Task Comments</h3>
+            <p class="fs-sm">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/analytics.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Tasks Analytics</h3>
+            <p class="fs-sm">Augue pulvinar justo, fermentum fames aliquamant accumsan vestibulum.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/bell.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Notifications</h3>
+            <p class="fs-sm">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/tasks.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Sections &amp; Subtasks</h3>
+            <p class="fs-sm">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/calendar.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Progress Tracking</h3>
+            <p class="fs-sm">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/add-group.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Multiple Assignees</h3>
+            <p class="fs-sm">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/headset.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Support 24/7</h3>
+            <p class="fs-sm">Sapien sed massa sit erat pellentesque pellentesque nisl, elementum.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+            <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+              <img src="assets/img/landing/saas-1/features/shield.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 pb-1 mb-2">Data Security</h3>
+            <p class="fs-sm">Aliquet felis facilisi sem nunc. Sapien fermentum, fringilla molestie lorem nec.</p>
+          </div>
+        </div>
+      </section>s
+
+
+<!-- Industries -->
+<section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
+  <h2 class="h1 text-center pb-3 pb-lg-4">Negocios que abarcamos</h2>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap active" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="true">
+        <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
+        Education
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="false">
+        <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
+        E-Commerce
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports" type="button" role="tab" aria-controls="sports" aria-selected="false">
+        <i class="bx bx-run fs-xl opacity-60 me-2"></i>
+        Sports
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="construction-tab" data-bs-toggle="tab" data-bs-target="#construction" type="button" role="tab" aria-controls="construction" aria-selected="false">
+        <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
+        Construstion
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="medicine-tab" data-bs-toggle="tab" data-bs-target="#medicine" type="button" role="tab" aria-controls="medicine" aria-selected="false">
+        <i class="bx bx-plus-medical fs-bse opacity-60 me-2"></i>
+        Medicine
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="real-estate-tab" data-bs-toggle="tab" data-bs-target="#real-estate" type="button" role="tab" aria-controls="real-estate" aria-selected="false">
+        <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
+        Real Estate
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-nowrap" id="wellness-tab" data-bs-toggle="tab" data-bs-target="#wellness" type="button" role="tab" aria-controls="wellness" aria-selected="false">
+        <i class="bx bx-spa fs-lg opacity-60 me-2"></i>
+        Wellness
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content bg-secondary rounded-3 py-4">
+
+    <!-- Education -->
+    <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Education</h3>
+          <p>Vestibulum nunc lectus auctor quis. Natoque lectus tortor lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi. Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel dignissim morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/education.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- E-Commerce -->
+    <div class="tab-pane fade" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">E-Commerce</h3>
+          <p>Curabitur auctor quam ut iaculis suscipit. Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/ecommerce.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Sports -->
+    <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Sports</h3>
+          <p>Etiam vehicula commodo nunc, ut tincidunt risus aliquam sit amet. Vivamus ut velit ut odio malesuada tincidunt ut non eros. Curabitur vel quam varius, ullamcorper mi quis, ultrices eros. Nam eget mi ut diam elementum facilisis vehicula eget augue.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/sports.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Construction -->
+    <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Construction</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, nunc in iaculis vestibulum, nunc ex convallis est, ut viverra velit sapien ac erat. Vivamus aliquet mi tellus, vel viverra ex blandit sed. Sed blandit lobortis risus. Aliquam blandit cursus ex sed iaculis.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/construction.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Medicine -->
+    <div class="tab-pane fade" id="medicine" role="tabpanel" aria-labelledby="medicine-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Medicine</h3>
+          <p>In vel nulla ac enim pellentesque tristique vel non dui. Integer vulputate ex leo, in accumsan purus consectetur quis. Cras scelerisque orci vel dapibus volutpat. In et consectetur enim. Maecenas lobortis viverra tortor, quis fermentum sem volutpat sit amet.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/medicine.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Estate -->
+    <div class="tab-pane fade" id="real-estate" role="tabpanel" aria-labelledby="real-estate-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Real Estate</h3>
+          <p>Donec consequat nibh at urna tincidunt tempor. Integer quis lobortis felis. Nulla id quam vestibulum, aliquam mauris vitae, auctor ex. Aliquam augue nulla, faucibus sed lacus ac, placerat elementum nisi. Curabitur enim nunc, dictum et accumsan.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/real-estate.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Wellness -->
+    <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+      <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Wellness</h3>
+          <p>Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius lectus lectus.</p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img src="assets/img/services/industries/wellness.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- CTA -->
+      <section class="position-relative bg-dark py-5">
+        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
+        <div class="container position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
+          <p class="lead text-light opacity-70 mb-3">¿Listo para comenzar?</p>
+          <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Desarrolla tu software con nosotros</h2>
+          <a href="#" class="btn btn-primary shadow-primary btn-lg">Trabaja con nosotros</a>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img class="SClogo" src="assets/img/logo_nav_dark.png" width="47" alt="SaltaCode">
+              <span style="font-family: 'Nexa', sans-serif;">SaltaCode</span>
+            </div>
+            <p class="pb-lg-3 mb-4">
+              Salta Code es una empresa orientada al servicio con sede en Salta, Argentina. Nos especializamos en el desarrollo de soluciones tecnológicas personalizadas y sofisticadas.
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Contenido</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#productsAndServices" class="nav-link d-inline-block px-0 pt-1 pb-2">Servicios y Productos</a></li>
+                    <li class="nav-item"><a href="#ourCustomers" class="nav-link d-inline-block px-0 pt-1 pb-2">Nuestros clientes</a></li>
+                    <li class="nav-item"><a href="#aboutUs" class="nav-link d-inline-block px-0 pt-1 pb-2">Nosotros</a></li>
+                    <!-- <li class="nav-item"><a href="#contacts" class="nav-link d-inline-block px-0 pt-1 pb-2">Contactanos</a></li> -->
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terminos y Condiciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Politica de privacidad</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Redes</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="https://www.linkedin.com/company/saltacode/" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/saltacode.ar" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a>
+                      <!-- <span><i class='bx bxl-facebook-square fs-5'></i></span> -->
+                    </li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li> -->
+                    <li class="nav-item"><a href="https://www.instagram.com/saltacode.ar/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contacto</h6>
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="mailto:saltacodear@gmail.com" class="fw-medium" style="text-decoration: none;">saltacodear@gmail.com</a></li>
+                  <li class="nav-item"><a href="https://maps.app.goo.gl/RKfbDFHbga3HUNvH7" class="fw-medium" style="text-decoration: none;">Zuviria 333 Oficina 4C</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; Todos los derechos reservados. Creado por </span>
+          <a class="nav-link d-inline-block p-0" href="index.html" target="_blank" rel="noopener">SaltaCode</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Inicio</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Load Screen -->
+    <script src="assets/js/load_screen.js"></script>
+  </body>
+</html>
