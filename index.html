@@ -121,6 +121,9 @@
         <!-- Logo animated -->
         <link rel="stylesheet" href="assets/css/logo-animated.css" />
 
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+
         <!-- Page loading styles -->
         <style>
             @import url("https://db.onlinewebfonts.com/c/ec94b85e5f995f46685d5818995f451d?family=Nexa-Heavy");
@@ -146,6 +149,13 @@
             footer h6, #copyright-logo-text{
                 font-family: "Nexa-Heavy", sans-serif;
                 color: #FCFCFC;
+            }
+
+            .swiper-slide img {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Para que la imagen cubra el espacio sin distorsionarse */
+                border-radius: 10px;
             }
 
             .page-loading {
@@ -2436,17 +2446,109 @@
                 >
                     Nosotros
                 </h2>
-                <div class="custom-container mx-4">
-                    <p class="mt-4 mb-0 mx-4 px-lg-4 px-0 mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsam earum necessitatibus ducimus sed nesciunt. Eos
-                        porro dignissimos omnis veritatis quisquam reprehenderit
-                        suscipit iusto totam, perferendis non enim neque
-                        obcaecati dicta quam corporis sit et incidunt, dolorem
-                        labore nobis. Esse, facilis! Illo dolorum vel labore
-                        quas reiciendis hic accusantium temporibus deleniti.
-                    </p>
+                
+
+                <div class="row align-items-center pt-3 pb-4 pb-md-0">
+                    <div class="col-12 col-md-6">
+                      <div class="custom-container mx-4">
+                        <!-- <h3 class="fs-lg h3 mb-0">¿Listo para impulsar el crecimiento de tu negocio?</h3> -->
+                        <h3 class="fs-lg h3 mb-sm-4">Somos tu aliado tecnológico.</h3>
+                        <p class="mt-4 mb-0 mx-4 px-lg-4 px-0 mb-4">
+                            
+                            Ayudamos a las empresas a acelerar su transformación digital, optimizando sus procesos 
+                            y mejorando su eficiencia. Con nuestras soluciones de software a medida y nuestros servicios 
+                            de consultoría, te proporcionamos las herramientas necesarias para competir en un mercado 
+                            cada vez más digital. Además, nuestros modelos de outsourcing y SaaS te permiten acceder 
+                            a la tecnología que necesitas sin realizar grandes inversiones iniciales.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-4 px-md-0">
+                        <!-- Fade transition -->
+                        <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                            "effect": "fade",
+                            "loop": "true",
+                            "autoplay": {
+                              "delay": 2000,
+                              "disableOnInteraction": "true"
+                            },
+                            "speed": 1000
+                          }'>
+                        <!-- <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                          "effect": "fade",
+                          "loop": true,
+                          "autoplay": {
+                            "delay": 2000,
+                            "disableOnInteraction": false
+                          },
+                          "speed": 1000,
+                          "navigation": {
+                            "prevEl": ".btn-prev",
+                            "nextEl": ".btn-next"
+                          }
+                        }'> -->
+                          <div class="swiper-wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide bg-light">
+                              <div class="ratio ratio-4x3">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">
+                                    <img src="assets\img\new-landing\about-us\oficina-pantalla.webp" alt="">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide bg-light">
+                              <div class="ratio ratio-4x3">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">
+                                    <img src="assets\img\new-landing\about-us\nosotros-facu.webp" alt="">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide bg-light">
+                              <div class="ratio ratio-4x3">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">
+                                    <img src="assets\img\new-landing\about-us\oficina-reunion.webp" alt="">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide bg-light">
+                                <div class="ratio ratio-4x3">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">
+                                    <img src="assets\img\new-landing\about-us\oficina-taza.webp" alt="">
+                                </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide bg-light">
+                                <div class="ratio ratio-4x3">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">
+                                    <img src="assets\img\new-landing\about-us\nosotros-pad.webp" alt="">
+                                </div>
+                                </div>
+                            </div>
+                            
+                          </div>
+
+                          <!-- Prev / next buttons -->
+                          <!-- <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                            <i class="bx bx-chevron-left"></i>
+                          </button>
+                          <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                            <i class="bx bx-chevron-right"></i>
+                          </button> -->
+                        </div>
+                    </div>
+
                 </div>
+
+                
             </section>
         </main>
 
@@ -2635,6 +2737,7 @@
         <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="assets/vendor/rellax/rellax.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
         <!-- Main Theme Script -->
         <script src="assets/js/theme.min.js"></script>
